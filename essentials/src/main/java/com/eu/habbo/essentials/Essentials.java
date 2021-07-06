@@ -62,6 +62,7 @@ public class Essentials extends HabboPlugin implements EventListener
             statement.execute("ALTER TABLE  `emulator_texts` CHANGE  `value`  `value` VARCHAR( 4096 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL");
         }
         catch (SQLException e){}
+        /*
         Emulator.getTexts().register("essentials.cmd_pay.keys", "pay;transfer");
         Emulator.getTexts().register("essentials.cmd_pay.incorrect.usage", "Missing arguments for pay command!");
         Emulator.getTexts().register("commands.description.cmd_pay", ":pay <username> <amount> <currency>");
@@ -73,6 +74,7 @@ public class Essentials extends HabboPlugin implements EventListener
         Emulator.getTexts().register("essentials.cmd_pay.received", "%username% has paid you %amount% %type%!");
         Emulator.getTexts().register("essentials.cmd_pay.transferred", "You paid %username% %amount% %type%!");
         reloadPermissions = this.registerPermission("cmd_pay", "'0', '1', '2'", "1", reloadPermissions);
+        */
 
         Emulator.getTexts().register("commands.description.cmd_kill", ":kill <username>");
         Emulator.getTexts().register("essentials.cmd_kill.keys", "kill;murder");
@@ -93,39 +95,39 @@ public class Essentials extends HabboPlugin implements EventListener
         Emulator.getTexts().register("essentials.cmd_kiss.keys", "kiss;frenchkiss");
         Emulator.getTexts().register("essentials.kissmessages.tofar", "%kissedperson% is too far to kiss!");
         reloadPermissions = this.registerPermission("cmd_kiss", "'0', '1', '2'", "1", reloadPermissions);
-
+        /*
         Emulator.getTexts().register("commands.description.cmd_hug", ":hug <username>");
         Emulator.getTexts().register("essentials.cmd_hug.keys", "hug;cuddle");
         Emulator.getTexts().register("essentials.hugmessages.huggedperson", "* Gets a warm hug from %hugger% *");
         Emulator.getTexts().register("essentials.hugmessages.hugger", "* Hugs %huggedperson% tightly *");
         Emulator.getTexts().register("essentials.hugmessages.tofar", "%huggedperson% is too far to hug. Get a bit closer and try again!");
         reloadPermissions = this.registerPermission("cmd_hug", "'0', '1', '2'", "1", reloadPermissions);
-
+        */
         Emulator.getTexts().register("commands.description.cmd_welcome", ":welcome <username>");
         Emulator.getTexts().register("essentials.cmd_welcome.keys", "welcome;willkommen;welkom;bienvenue;bienvenida;bem-vindo");
         Emulator.getTexts().register("essentials.cmd_welcome.text", "Welcome %username% to %hotelname%;My name is %greeter_username% and I am %greeter_rank% at %hotelname%;At the moment there are %onlinecount% %hotelplayername%s online!;If you have any further questions feel free to ask me or any of our staff. You can recognize our staff from the badge they wear;Enjoy your stay in %hotelname% %username%!");
         reloadPermissions = this.registerPermission("cmd_welcome", "'0', '1', '2'", "0", reloadPermissions);
-
+        
         Emulator.getTexts().register("commands.description.cmd_disable_effects", ":disableffects");
         Emulator.getTexts().register("essentials.cmd_disable_effects.keys", "antieffects;disableffects");
         Emulator.getTexts().register("essentials.cmd_disable_effects.effects_enabled", "Effects in this room have been enabled!");
         Emulator.getTexts().register("essentials.cmd_disable_effects.effects_disabled", "Effects in this room have been disabled!");
         reloadPermissions = this.registerPermission("cmd_disable_effects", "'0', '1', '2'", "2", reloadPermissions);
-
+        /*
         Emulator.getTexts().register("commands.description.cmd_brb", ":brb");
         Emulator.getTexts().register("essentials.cmd_brb.keys", "afk;brb;");
         Emulator.getTexts().register("essentials.cmd_brb.brb", "* %username% is now AFK! *");
         Emulator.getTexts().register("essentials.cmd_brb.back", "* %username% is now back! *");
         Emulator.getTexts().register("essentials.cmd_brb.time", "* %username% has now been away for %time% minutes *");
         reloadPermissions = this.registerPermission("cmd_brb", "'0', '1', '2'", "1", reloadPermissions);
-
+        
         Emulator.getTexts().register("commands.description.cmd_nuke", ":nuke <username>");
         Emulator.getTexts().register("essentials.cmd_nuke.keys", "nuke;nade;grenade;explode;boom");
         Emulator.getTexts().register("essentials.nuke.self", "You can't nuke yourself, silly!");
         Emulator.getTexts().register("essentials.nuke.action", "* Launches nuke towards %username% *");
         Emulator.getTexts().register("essentials.nuke.nuked", "* %username% gets obliterated *");
         reloadPermissions = this.registerPermission("cmd_nuke", "'0', '1', '2'", "1", reloadPermissions);
-
+        
         Emulator.getTexts().register("commands.description.cmd_buildheight", ":buildheight [height]");
         Emulator.getTexts().register("essentials.cmd_buildheight.keys", "buildheight;bh");
         Emulator.getTexts().register("essentials.cmd_buildheight.invalid_height", "Invalid height! Build height must be between 0 - 40!");
@@ -133,14 +135,14 @@ public class Essentials extends HabboPlugin implements EventListener
         Emulator.getTexts().register("essentials.cmd_buildheight.disabled", "Build height removed.");
         Emulator.getTexts().register("essentials.cmd_buildheight.not_specified", "No buildheight set. Height must be between 0 - 40.");
         reloadPermissions = this.registerPermission("cmd_buildheight", "'0', '1', '2'", "1", reloadPermissions);
-
+          
         Emulator.getTexts().register("commands.description.cmd_slime", ":slime <username>");
         Emulator.getTexts().register("essentials.cmd_slime.keys", "slime;slimed;goop;nickelodeon");
         Emulator.getTexts().register("essentials.cmd_slime.throws", "* Throws slime at %username%s direction *");
         Emulator.getTexts().register("essentials.cmd_slime.missed", "* Missed %username%s face *");
         Emulator.getTexts().register("essentials.cmd_slime.slimed", "* Gets covered in slime by %username% *");
         reloadPermissions = this.registerPermission("cmd_slime", "'0', '1', '2'", "1", reloadPermissions);
-
+        */
         Emulator.getTexts().register("commands.description.cmd_explain", ":explain <command>");
         Emulator.getTexts().register("essentials.cmd_explain.keys", "explain;commandinfo;commandhelp;aliases");
         Emulator.getTexts().register("essentials.cmd_explain.help", "Specify a command to lookup. Example: :explain mimic");
@@ -148,7 +150,7 @@ public class Essentials extends HabboPlugin implements EventListener
         Emulator.getTexts().register("essentials.cmd_explain.nopermission", "You don't have permission to use %command%");
         Emulator.getTexts().register("essentials.cmd_explain.info", "Information about the '%command%'-command:\rUsage: %description%\rKeys / Aliases:%keys%");
         reloadPermissions = this.registerPermission("cmd_explain", "'0', '1', '2'", "1", reloadPermissions);
-
+        /*
         Emulator.getTexts().register("commands.description.cmd_buyroom", ":buyroom");
         Emulator.getTexts().register("commands.description.cmd_sellroom", ":sellroom <credits>");
         Emulator.getTexts().register("essentials.sellroom.keys", "sellroom");
@@ -174,7 +176,7 @@ public class Essentials extends HabboPlugin implements EventListener
         Emulator.getTexts().register("essentials.cmd_closedice.closed", "* Closes %count% dices *");
         reloadPermissions = this.registerPermission("cmd_closedice", "'0', '1', '2'", "1", reloadPermissions);
         reloadPermissions = this.registerPermission("acc_closedice_room", "'0', '1', '2'", "2", reloadPermissions);
-
+        */
         Emulator.getTexts().register("commands.description.cmd_set", ":set info");
         Emulator.getTexts().register("essentials.cmd_set.keys", "set;changefurni");
         Emulator.getTexts().register("essentials.cmd_set.error", "Use ':set info' for more information!");
@@ -193,7 +195,7 @@ public class Essentials extends HabboPlugin implements EventListener
         CommandHandler.addCommand(new KillCommand("cmd_kill", Emulator.getTexts().getValue("essentials.cmd_kill.keys").split(";")));
         CommandHandler.addCommand(new HoverBoardCommand());
         CommandHandler.addCommand(new KissCommand("cmd_kiss", Emulator.getTexts().getValue("essentials.cmd_kiss.keys").split(";")));
-        CommandHandler.addCommand(new HugCommand("cmd_hug", Emulator.getTexts().getValue("essentials.cmd_hug.keys").split(";")));
+        //CommandHandler.addCommand(new HugCommand("cmd_hug", Emulator.getTexts().getValue("essentials.cmd_hug.keys").split(";")));
         CommandHandler.addCommand(new WelcomeCommand("cmd_welcome", Emulator.getTexts().getValue("essentials.cmd_welcome.keys").split(";")));
         CommandHandler.addCommand(new DisableEffects("cmd_disable_effects", Emulator.getTexts().getValue("essentials.cmd_disable_effects.keys").split(";")));
         //CommandHandler.addCommand(new BrbCommand("cmd_brb", Emulator.getTexts().getValue("essentials.cmd_brb.keys").split(";")));
