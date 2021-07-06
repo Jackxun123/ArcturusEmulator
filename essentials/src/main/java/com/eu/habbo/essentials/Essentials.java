@@ -189,22 +189,21 @@ public class Essentials extends HabboPlugin implements EventListener
             Emulator.getGameEnvironment().getPermissionsManager().reload();
         }
 
-        CommandHandler.addCommand(new PayCommand("cmd_pay", Emulator.getTexts().getValue("essentials.cmd_pay.keys").split(";")));
+        //CommandHandler.addCommand(new PayCommand("cmd_pay", Emulator.getTexts().getValue("essentials.cmd_pay.keys").split(";")));
         CommandHandler.addCommand(new KillCommand("cmd_kill", Emulator.getTexts().getValue("essentials.cmd_kill.keys").split(";")));
         CommandHandler.addCommand(new HoverBoardCommand());
         CommandHandler.addCommand(new KissCommand("cmd_kiss", Emulator.getTexts().getValue("essentials.cmd_kiss.keys").split(";")));
         CommandHandler.addCommand(new HugCommand("cmd_hug", Emulator.getTexts().getValue("essentials.cmd_hug.keys").split(";")));
         CommandHandler.addCommand(new WelcomeCommand("cmd_welcome", Emulator.getTexts().getValue("essentials.cmd_welcome.keys").split(";")));
         CommandHandler.addCommand(new DisableEffects("cmd_disable_effects", Emulator.getTexts().getValue("essentials.cmd_disable_effects.keys").split(";")));
-        CommandHandler.addCommand(new BrbCommand("cmd_brb", Emulator.getTexts().getValue("essentials.cmd_brb.keys").split(";")));
-        CommandHandler.addCommand(new NukePlayerCommand("cmd_nuke", Emulator.getTexts().getValue("essentials.cmd_nuke.keys").split(";")));
-        CommandHandler.addCommand(new BuildHeightCommand("cmd_buildheight", Emulator.getTexts().getValue("essentials.cmd_buildheight.keys").split(";")));
-        CommandHandler.addCommand(new SlimeCommand("cmd_slime", Emulator.getTexts().getValue("essentials.cmd_slime.keys").split(";")));
+        //CommandHandler.addCommand(new BrbCommand("cmd_brb", Emulator.getTexts().getValue("essentials.cmd_brb.keys").split(";")));
+        //CommandHandler.addCommand(new NukePlayerCommand("cmd_nuke", Emulator.getTexts().getValue("essentials.cmd_nuke.keys").split(";")));
+        //CommandHandler.addCommand(new BuildHeightCommand("cmd_buildheight", Emulator.getTexts().getValue("essentials.cmd_buildheight.keys").split(";")));
+        //CommandHandler.addCommand(new SlimeCommand("cmd_slime", Emulator.getTexts().getValue("essentials.cmd_slime.keys").split(";")));
         CommandHandler.addCommand(new ExplainCommand("cmd_explain", Emulator.getTexts().getValue("essentials.cmd_explain.keys").split(";")));
-        CommandHandler.addCommand(new SellRoomCommand("cmd_sellroom", Emulator.getTexts().getValue("essentials.sellroom.keys").split(";")));
-        CommandHandler.addCommand(new BuyRoomCommand("cmd_buyroom", Emulator.getTexts().getValue("essentials.buyroom.keys").split(";")));
-        CommandHandler.addCommand(new SellRoomCommand("cmd_sellroom", Emulator.getTexts().getValue("essentials.sellroom.keys").split(";")));
-        CommandHandler.addCommand(new CloseDiceCommand("cmd_closedice", Emulator.getTexts().getValue("essentials.cmd_closedice.keys").split(";")));
+        //CommandHandler.addCommand(new SellRoomCommand("cmd_sellroom", Emulator.getTexts().getValue("essentials.sellroom.keys").split(";")));
+        //CommandHandler.addCommand(new BuyRoomCommand("cmd_buyroom", Emulator.getTexts().getValue("essentials.buyroom.keys").split(";")));
+        //CommandHandler.addCommand(new CloseDiceCommand("cmd_closedice", Emulator.getTexts().getValue("essentials.cmd_closedice.keys").split(";")));
         CommandHandler.addCommand(new SetFurnitureCommand("cmd_set", Emulator.getTexts().getValue("essentials.cmd_set.keys").split(";")));
     }
 
