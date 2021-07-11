@@ -25,7 +25,7 @@ public class WelcomeCommand extends Command
                     gameClient.getHabbo().shout(s
                             .replace("%username%", habbo.getHabboInfo().getUsername())
                             .replace("%greeter_username%", gameClient.getHabbo().getHabboInfo().getUsername())
-                            //.replace("%greeter_rank%", Emulator.getGameEnvironment().getPermissionsManager().getRankName(gameClient.getHabbo().getHabboInfo().getRank()))
+                            .replace("%greeter_rank%", Emulator.getGameEnvironment().getPermissionsManager().getRankName(gameClient.getHabbo().getHabboInfo().getRank()))
                             .replace("%hotelname%", Emulator.getConfig().getValue("hotel.name"))
                             .replace("%onlinecount%", Emulator.getGameEnvironment().getHabboManager().getOnlineCount() + "")
                             .replace("%hotelplayername%", Emulator.getConfig().getValue("hotel.player.name"))
